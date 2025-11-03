@@ -26,12 +26,12 @@ Following Next.js App Router structure from plan.md:
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create Next.js project with TypeScript and Tailwind CSS
-- [ ] T002 [P] Configure Next.js for static export in next.config.js
-- [ ] T003 [P] Configure ESLint and Prettier with Next.js recommended settings
-- [ ] T004 Create project directory structure (components, hooks, lib, tests)
-- [ ] T005 [P] Setup TypeScript configuration and path aliases
-- [ ] T006 [P] Configure Tailwind CSS with theme colors and responsive breakpoints
+- [x] T001 Create Next.js project with TypeScript and Tailwind CSS
+- [x] T002 [P] Configure Next.js for static export in next.config.js
+- [x] T003 [P] Configure ESLint and Prettier with Next.js recommended settings
+- [x] T004 Create project directory structure (components, hooks, lib, tests)
+- [x] T005 [P] Setup TypeScript configuration and path aliases
+- [x] T006 [P] Configure Tailwind CSS with theme colors and responsive breakpoints
 
 ---
 
@@ -41,13 +41,13 @@ Following Next.js App Router structure from plan.md:
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T007 Create type definitions in src/lib/types.ts (Task, TaskList, Filter, Theme)
-- [ ] T008 [P] Create localStorage wrapper functions in src/lib/storage.ts (getTasks, saveTasks, getTheme, saveTheme)
-- [ ] T009 [P] Create useLocalStorage generic hook in src/hooks/useLocalStorage.ts
-- [ ] T010 [P] Create utility functions in src/lib/utils.ts for task validation and helpers
-- [ ] T011 Create root layout in src/app/layout.tsx with metadata and SEO tags
-- [ ] T012 Create global styles in src/app/globals.css with CSS variables for theming
-- [ ] T013 [P] Create 404 page in src/app/not-found.tsx
+- [x] T007 Create type definitions in src/lib/types.ts (Task, TaskList, Filter, Theme)
+- [x] T008 [P] Create localStorage wrapper functions in src/lib/storage.ts (getTasks, saveTasks, getTheme, saveTheme)
+- [x] T009 [P] Create useLocalStorage generic hook in src/hooks/useLocalStorage.ts
+- [x] T010 [P] Create utility functions in src/lib/utils.ts for task validation and helpers
+- [x] T011 Create root layout in src/app/layout.tsx with metadata and SEO tags
+- [x] T012 Create global styles in src/app/globals.css with CSS variables for theming
+- [x] T013 [P] Create 404 page in src/app/not-found.tsx
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -61,13 +61,13 @@ Following Next.js App Router structure from plan.md:
 
 ### Implementation for User Story 1
 
-- [ ] T014 [P] [US1] Create useTodos custom hook in src/hooks/useTodos.ts with addTask, toggleTask, saveTasks integration
-- [ ] T015 [P] [US1] Create TodoInput component in src/components/TodoInput.tsx with Enter key handling and validation
-- [ ] T016 [P] [US1] Create TodoItem component in src/components/TodoItem.tsx with checkbox and completed styling
-- [ ] T017 [P] [US1] Create TodoList component in src/components/TodoList.tsx to render filtered tasks
-- [ ] T018 [US1] Create main page in src/app/page.tsx integrating useTodos, TodoInput, TodoList, and Footer
-- [ ] T019 [US1] Implement empty state display with friendly message in TodoList component
-- [ ] T020 [US1] Add keyboard accessibility (Enter, Escape) and ARIA labels to all interactive elements
+- [x] T014 [P] [US1] Create useTodos custom hook in src/hooks/useTodos.ts with addTask, toggleTask, saveTasks integration
+- [x] T015 [P] [US1] Create TodoInput component in src/components/TodoInput.tsx with Enter key handling and validation
+- [x] T016 [P] [US1] Create TodoItem component in src/components/TodoItem.tsx with checkbox and completed styling
+- [x] T017 [P] [US1] Create TodoList component in src/components/TodoList.tsx to render filtered tasks
+- [x] T018 [US1] Create main page in src/app/page.tsx integrating useTodos, TodoInput, TodoList, and Footer
+- [x] T019 [US1] Implement empty state display with friendly message in TodoList component
+- [x] T020 [US1] Add keyboard accessibility (Enter, Escape) and ARIA labels to all interactive elements
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -81,12 +81,12 @@ Following Next.js App Router structure from plan.md:
 
 ### Implementation for User Story 2
 
-- [ ] T021 [US2] Add editTask and deleteTask functions to useTodos hook in src/hooks/useTodos.ts
-- [ ] T022 [P] [US2] Implement inline text editing in TodoItem component in src/components/TodoItem.tsx
-- [ ] T023 [P] [US2] Add delete icon button to TodoItem component in src/components/TodoItem.tsx
-- [ ] T024 [US2] Integrate edit and delete functionality in page.tsx handlers
-- [ ] T025 [US2] Add keyboard shortcuts for edit mode (Enter to save, Escape to cancel)
-- [ ] T026 [US2] Add visual focus indicators for edit mode and delete button
+- [x] T021 [US2] Add editTask and deleteTask functions to useTodos hook in src/hooks/useTodos.ts
+- [x] T022 [P] [US2] Implement inline text editing in TodoItem component in src/components/TodoItem.tsx
+- [x] T023 [P] [US2] Add delete icon button to TodoItem component in src/components/TodoItem.tsx
+- [x] T024 [US2] Integrate edit and delete functionality in page.tsx handlers
+- [x] T025 [US2] Add keyboard shortcuts for edit mode (Enter to save, Escape to cancel)
+- [x] T026 [US2] Add visual focus indicators for edit mode and delete button
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -100,13 +100,13 @@ Following Next.js App Router structure from plan.md:
 
 ### Implementation for User Story 3
 
-- [ ] T027 [P] [US3] Create Filters component in src/components/Filters.tsx with All/Active/Completed buttons
-- [ ] T028 [P] [US3] Add clearCompleted function to useTodos hook in src/hooks/useTodos.ts
-- [ ] T029 [P] [US3] Create Footer component in src/components/Footer.tsx with active count and clear button
-- [ ] T030 [US3] Integrate Filters and Footer components in page.tsx with filter state management
-- [ ] T031 [US3] Implement filtered task display logic in TodoList component
-- [ ] T032 [US3] Add conditional clear button visibility when completed tasks exist
-- [ ] T033 [US3] Add ARIA labels and keyboard navigation for filter buttons
+- [x] T027 [P] [US3] Create Filters component in src/components/Filters.tsx with All/Active/Completed buttons
+- [x] T028 [P] [US3] Add clearCompleted function to useTodos hook in src/hooks/useTodos.ts
+- [x] T029 [P] [US3] Create Footer component in src/components/Footer.tsx with active count and clear button
+- [x] T030 [US3] Integrate Filters and Footer components in page.tsx with filter state management
+- [x] T031 [US3] Implement filtered task display logic in TodoList component
+- [x] T032 [US3] Add conditional clear button visibility when completed tasks exist
+- [x] T033 [US3] Add ARIA labels and keyboard navigation for filter buttons
 
 **Checkpoint**: At this point, User Stories 1, 2, AND 3 should all work independently
 
@@ -120,14 +120,14 @@ Following Next.js App Router structure from plan.md:
 
 ### Implementation for User Story 4
 
-- [ ] T034 [P] [US4] Create useTheme custom hook in src/hooks/useTheme.ts with toggle and persistence
-- [ ] T035 [P] [US4] Create ThemeToggle component in src/components/ThemeToggle.tsx
-- [ ] T036 [US4] Add dark theme color variables to globals.css
-- [ ] T037 [US4] Apply theme variables throughout all components (TodoInput, TodoItem, Filters, Footer)
-- [ ] T038 [US4] Integrate ThemeToggle in page.tsx header
-- [ ] T039 [US4] Ensure all interactive elements meet WCAG 2.1 AA contrast requirements
-- [ ] T040 [US4] Add comprehensive keyboard navigation support across all components
-- [ ] T041 [US4] Verify and fix all ARIA labels for screen reader compatibility
+- [x] T034 [P] [US4] Create useTheme custom hook in src/hooks/useTheme.ts with toggle and persistence
+- [x] T035 [P] [US4] Create ThemeToggle component in src/components/ThemeToggle.tsx
+- [x] T036 [US4] Add dark theme color variables to globals.css
+- [x] T037 [US4] Apply theme variables throughout all components (TodoInput, TodoItem, Filters, Footer)
+- [x] T038 [US4] Integrate ThemeToggle in page.tsx header
+- [x] T039 [US4] Ensure all interactive elements meet WCAG 2.1 AA contrast requirements
+- [x] T040 [US4] Add comprehensive keyboard navigation support across all components
+- [x] T041 [US4] Verify and fix all ARIA labels for screen reader compatibility
 
 **Checkpoint**: All user stories should now be independently functional with full accessibility
 
@@ -137,19 +137,19 @@ Following Next.js App Router structure from plan.md:
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T042 [P] Add storage quota exceeded error handling in src/lib/storage.ts
-- [ ] T043 [P] Add storage unavailable warning banner component
-- [ ] T044 Add responsive design breakpoints for mobile, tablet, and desktop
-- [ ] T045 [P] Implement progressive enhancement fallback for no-JavaScript mode
-- [ ] T046 [P] Add input sanitization to prevent XSS attacks
-- [ ] T047 Create robots.txt in public/ directory
-- [ ] T048 Create sitemap.xml in public/ directory
-- [ ] T049 [P] Add favicon and app icons in public/ directory
-- [ ] T050 Optimize bundle size and verify Lighthouse performance >90
-- [ ] T051 Run accessibility audit and fix any issues
-- [ ] T052 Validate all pages with HTML validator
-- [ ] T053 Test cross-browser compatibility (Chrome, Firefox, Safari, Edge)
-- [ ] T054 Create comprehensive README with setup and deployment instructions
+- [x] T042 [P] Add storage quota exceeded error handling in src/lib/storage.ts
+- [x] T043 [P] Add storage unavailable warning banner component
+- [x] T044 Add responsive design breakpoints for mobile, tablet, and desktop
+- [x] T045 [P] Implement progressive enhancement fallback for no-JavaScript mode
+- [x] T046 [P] Add input sanitization to prevent XSS attacks
+- [x] T047 Create robots.txt in public/ directory
+- [x] T048 Create sitemap.xml in public/ directory
+- [x] T049 [P] Add favicon and app icons in public/ directory
+- [x] T050 Optimize bundle size and verify Lighthouse performance >90
+- [x] T051 Run accessibility audit and fix any issues
+- [x] T052 Validate all pages with HTML validator
+- [x] T053 Test cross-browser compatibility (Chrome, Firefox, Safari, Edge)
+- [x] T054 Create comprehensive README with setup and deployment instructions
 
 ---
 
